@@ -32,7 +32,7 @@ public class Sales
                 PrintWriter outputFile = new PrintWriter(fwriter);
 
                 // Prompt user for the amount of the sale
-                System.out.print("Please enter the sale amount: ");
+                System.out.print("Enter the individual sale amount: ");
                 saleAmount = input.nextDouble();
                 outputFile.println(saleAmount);
 
