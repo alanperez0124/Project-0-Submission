@@ -73,6 +73,26 @@ public class Sales
 
                 System.out.printf("The total is %f.\n", sum);
             }
+
+            else if (choice == 0)
+            {
+                // Load file
+                File myFile = new File("sales.txt");
+                Scanner inputFile = new Scanner(myFile);
+
+                // find the largest value
+                double largest = 0;
+                while (inputFile.hasNext())
+                {
+                    double value = inputFile.nextDouble();
+                    if (value > largest)
+                    {
+                        largest = value;
+                    }
+                }
+
+                System.out.printf("Largest value: %f\n", largest);
+            }
         } while (choice != 4);  // terminates program
 
     }
